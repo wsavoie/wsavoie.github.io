@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Smarticle Controls</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Smarticle Soundboard">
+	<meta name="description" content="HTML 5 soundboard.">
+	<meta name="keywords" content="HTML5, Mobile, Soundboard, IBM">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	   <style>
+		body {
+			margin-left: 20px;
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+		label {
+			font-weight: normal;
+		}
+		table, th, td {
+			border: 1px solid black;
+		}
+		td, th {
+			padding: 10px;
+		}
+.btn {
+  background: #3498db;
+    display: block;
+  width: 120px;
+  margin-bottom:5px;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+  
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.btnSilence {
+  width: 120px;
+  margin-bottom:5px;
+  display: block;
+  background: #d93434;
+  background-image: -webkit-linear-gradient(top, #d93434, #b82b2b);
+  background-image: -moz-linear-gradient(top, #d93434, #b82b2b);
+  background-image: -ms-linear-gradient(top, #d93434, #b82b2b);
+  background-image: -o-linear-gradient(top, #d93434, #b82b2b);
+  background-image: linear-gradient(to bottom, #d93434, #b82b2b);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.text{
+display: inline-block;
+}
+.btnSilence:hover {
+  background: #fc3c3c;
+  background-image: -webkit-linear-gradient(top, #fc3c3c, #d93434);
+  background-image: -moz-linear-gradient(top, #fc3c3c, #d93434);
+  background-image: -ms-linear-gradient(top, #fc3c3c, #d93434);
+  background-image: -o-linear-gradient(top, #fc3c3c, #d93434);
+  background-image: linear-gradient(to bottom, #fc3c3c, #d93434);
+  text-decoration: none;
+}
+		</style>
+</head>
+	<body>
+	<audio id="600" src="audio/600.wav" loop></audio>
+	<audio id="700" src="audio/700.wav"></audio>
+	<audio id="800" src="audio/800.wav"></audio>
+	<audio id="900" src="audio/900.wav"></audio>
+	<audio id="1000" src="audio/1000.wav"></audio>
+	<audio id="1100" src="audio/1100.wav"></audio>
+	<audio id="1200" src="audio/1200.wav"></audio>
+	<audio id="1300" src="audio/1300.wav"></audio>
+	<audio id="1400" src="audio/1400.wav"></audio>
+	<audio id="1500" src="audio/1500.wav"></audio>
+	<audio id="1600" src="audio/1600.wav"></audio>
+	
+	
+	<button class="btnSilence" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; })">Silence</button> 
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('600').play()">600<br>u-Shape</button> 	
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('700').play()">700<br>z-Shape</button>
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('800').play()">800<br>n-Shape</button>
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('900').play()">900<br>Straighten</button>
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1000').play()">1000<br>L-Diamond</button>
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1100').play()">1100<br>R-Diamond</button>
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1200').play()">1200<br>L-Square</button>
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1300').play()">1300<br>R-Square</button>
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1400').play()">1400<br>+Square</button>
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1500').play()">1500<br>-Square</button>
+	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1600').play()">1600<br>Vibrate</button>
+
+	</body>
+
+</html>
