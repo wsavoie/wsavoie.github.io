@@ -26,7 +26,7 @@
 .btn {
   background: #3498db;
     display: block;
-  width: 120px;
+  width: 110px;
   margin-bottom:5px;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -39,7 +39,7 @@
   font-family: Arial;
   color: #ffffff;
   font-size: 12px;
-  padding: 10px 20px 10px 20px;
+  padding: 5px 20px 5px 20px;
   border: solid #1f628d 2px;
   text-decoration: none;
   
@@ -56,7 +56,7 @@
 }
 
 .btnSilence {
-  width: 120px;
+  width: 110px;
   margin-bottom:5px;
   display: block;
   background: #d93434;
@@ -86,34 +86,33 @@ display: inline-block;
   background-image: linear-gradient(to bottom, #fc3c3c, #d93434);
   text-decoration: none;
 }
-		</style>
+</style>
 </head>
 	<body>
 	<audio id="600" src="audio/600.wav" loop></audio>
-	<audio id="700" src="audio/700.wav"></audio>
-	<audio id="800" src="audio/800.wav"></audio>
-	<audio id="900" src="audio/900.wav"></audio>
-	<audio id="1000" src="audio/1000.wav"></audio>
-	<audio id="1100" src="audio/1100.wav"></audio>
-	<audio id="1200" src="audio/1200.wav"></audio>
-	<audio id="1300" src="audio/1300.wav"></audio>
-	<audio id="1400" src="audio/1400.wav"></audio>
-	<audio id="1500" src="audio/1500.wav"></audio>
-	<audio id="1600" src="audio/1600.wav"></audio>
-	
-	
-	<button class="btnSilence" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; })">Silence</button> 
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('600').play()">600<br>u-Shape</button> 	
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('700').play()">700<br>z-Shape</button>
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('800').play()">800<br>n-Shape</button>
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('900').play()">900<br>Straighten</button>
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1000').play()">1000<br>L-Diamond</button>
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1100').play()">1100<br>R-Diamond</button>
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1200').play()">1200<br>L-Square</button>
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1300').play()">1300<br>R-Square</button>
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1400').play()">1400<br>+Square</button>
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1500').play()">1500<br>-Square</button>
-	<button class="btn"  onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1600').play()">1600<br>Vibrate</button>
+	<audio id="700" src="audio/700.wav" loop></audio>
+	<audio id="800" src="audio/800.wav" loop></audio>
+	<audio id="900" src="audio/900.wav" loop></audio>
+	<audio id="1000" src="audio/1000.wav" loop></audio>
+	<audio id="1100" src="audio/1100.wav" loop></audio>
+	<audio id="1200" src="audio/1200.wav" loop></audio>
+	<audio id="1300" src="audio/1300.wav" loop></audio>
+	<audio id="1400" src="audio/1400.wav" loop></audio>
+	<audio id="1500" src="audio/1500.wav" loop></audio>
+	<audio id="1600" src="audio/1600.wav" loop></audio>
+
+	<button class="btnSilence" accesskey="`" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; })">Silence</button> 
+	<button class="btn"  accesskey="1" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('600').play()">600 Hz<br>u-Shape</button> 	
+	<button class="btn"  accesskey="2"onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('700').play()">700 Hz<br>z-Shape</button>
+	<button class="btn"  accesskey="3"onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('800').play()">800 Hz<br>n-Shape</button>
+	<button class="btn"  accesskey="4"onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('900').play()">900 Hz<br>Straighten</button>
+	<button class="btn"  accesskey="5"onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1000').play()">1000 Hz<br>L-Diamond</button>
+	<button class="btn"  accesskey="6"onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1100').play()">1100 Hz<br>R-Diamond</button>
+	<button class="btn"  accesskey="7"onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1200').play()">1200 Hz<br>L-Square</button>
+	<button class="btn"  accesskey="8"onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1300').play()">1300 Hz<br>R-Square</button>
+	<button class="btn"  accesskey="9"onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1400').play()">1400 Hz<br>+Square</button>
+	<button class="btn"  accesskey="0"onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1500').play()">1500 Hz<br>-Square</button>
+	<button class="btn"  accesskey="-"onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0; }); document.getElementById('1600').play()">1600 Hz<br>Vibrate</button>
 
 	</body>
 
